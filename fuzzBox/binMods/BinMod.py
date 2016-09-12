@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import os
 import json
+import gdb
+from functools import partial
 class BinMod( object ):
 	"""
 		a BinMod fucks shit up using gdb
@@ -13,14 +15,18 @@ class BinMod( object ):
 
 		# load the config file and save it as a variable
 		config_file = os.getcwd() + "/../config.json"
-		config = {}
+		my_config = {}
 		with open(config_file, "r") as f:
-			config = json.loads(''.join(f.readlines()))
+			my_config = json.loads(''.join(f.readlines()))
 
-		self.config = config
+		self.my_config = my_config
 		self.peda = _peda
+		self.gdb_run = partial(gdb.execute, to_string=True)
+		self.gdb_run("file " + self.my_config["prog_path"] + self.my_config["prog_name"])
 
-	def update(self):
-		"""
-			make some tweaks
-		"""
+	# def prep(self):
+
+	# def update(self):
+	# 	"""
+	# 		make some tweaks
+	# 	"""

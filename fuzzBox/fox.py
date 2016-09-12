@@ -19,15 +19,11 @@ run_id = ""
 
 # load all the jmp flipping stuff here
 # make it nice and modular
-prog_name = "of"
-# prog_name = "flow"
-prog_path = "../tests/"
-args = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 gdb_run = partial(gdb.execute, to_string=True)
 config_file = os.getcwd() + "/../config.json"
-config = {}
+my_config = {}
 with open(config_file, "r") as f:
-	config = json.loads(''.join(f.readlines()))
+	my_config = json.loads(''.join(f.readlines()))
 
 
 def dump(obj):
@@ -35,13 +31,16 @@ def dump(obj):
 	print "obj.%s = %s" % (attr, str(getattr(obj, attr)))
 
 def get_saved_eip():
-	response = gdb_run("info frame")
-	p = re.compile(r'saved .ip\s*=\s*(0x[a-f0-9]+)')
-	matches = p.findall(response)
-	saved_eip = None
-	if len(matches) == 1:
-		saved_eip = matches[0]
-	return saved_eip
+	try:
+		response = gdb_run("info frame")
+		p = re.compile(r'saved .ip\s*=\s*(0x[a-f0-9]+)')
+		matches = p.findall(response)
+		saved_eip = None
+		if len(matches) == 1:
+			saved_eip = matches[0]
+		return saved_eip
+	except:
+		return None
 
 def exit_handler(event):
 	"""
@@ -49,21 +48,31 @@ def exit_handler(event):
 	"""
 	global run_id
 	print "event type: exit"
-	with open("../reports/"+ config["prog_name"] + "/" + run_id, "w") as report:
+	with open("../reports/"+ my_config["prog_name"] + "/" + run_id, "a") as report:
 	# save the program output to the crash report
 		with open("./output.txt", "r") as output:
-			report.write("Program Output:" + '\n'.join(output.readlines()))
-	os.remove("output.txt")
+			report.write("Program Output:\n" + '\n'.join(output.readlines()))
+	os.remove("output.txt") # cleanup
 	
 def stop_handler(event):
+	# todo: ask the mod if it has anything to do with this
+	if "breakpoint" in dir(event):
+		print "This shouldn't happen"
+		gdb_run("c")
+		return
+
 	global run_id
 	print "event type: stop"
-	with open("../reports/"+ config["prog_name"] + "/crash-" + run_id, "w") as report:
+	with open("../reports/"+ my_config["prog_name"] + "/crash-" + run_id, "w") as report:
 
 		# do a crashdump
 		report.write(gdb_run("crashdump " + event.stop_signal))
+
+		report.write("makde it")
 		# get the return address
 		saved_eip = get_saved_eip()
+		if saved_eip == None:
+			return
 		# if saved_eip != None:
 		report.write("saved return address:" + saved_eip + "\n")
 		# if the saved eip/rip is not valid
@@ -84,29 +93,29 @@ def execute(num, _peda):
 
 	peda = _peda
 	# print peda
-
 	binaryModder = JmpFlip(peda)
 
-
 	# make a directory to put the crash reports
-	directory = "../reports/"+config["prog_name"]+"/"
+	directory = "../reports/"+my_config["prog_name"]+"/"
 	if not os.path.exists(directory):
 		os.makedirs(directory)
 
-	gdb.events.exited.connect(exit_handler)
-	gdb.events.stop.connect(stop_handler)
 
 	# gdb_run("catch signal SIGSEGV")
 	# gdb_run("catch signal SIGABRT")
 
-	gdb_run("file " + config["prog_path"] + config["prog_name"]) #AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-
 	for x in range(num):
 		run_id = str(uuid.uuid4())
+		gdb_run("start {args} < ../Transcript.txt > output.txt".format(args=my_config["args"]))
+		cmds = binaryModder.prep()
+		with open("../reports/"+ my_config["prog_name"] + "/" + run_id, "w") as report:
+			report.write("Commands run:\n" + cmds)
+		gdb.events.exited.connect(exit_handler)
+		gdb.events.stop.connect(stop_handler)
+		gdb_run("c")
+		gdb.events.exited.disconnect(exit_handler)
+		gdb.events.stop.disconnect(stop_handler)
 
-		gdb_run("run {args} < ../Transcript.txt > output.txt".format(args=config["args"]))
-
-	# os.remove("output.txt")
 
 
 

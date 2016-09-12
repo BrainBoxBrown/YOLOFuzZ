@@ -30,10 +30,10 @@ def objdump_extract(binname):
 		entry = {}
 		sections = line.split('\x09')
 		address = sections[0].replace(":",'')
-		entry["address"] = address
+		entry["address"] = "0x" + address.lstrip()
 		bytes = filter(None, sections[1].split(' '))
 		entry["bytes"] = [int(x,16) for x in bytes]
-		cmd = sections[2]
+		cmd = sections[2] + ' ' # add a space to stop it breaking
 		first_space = cmd.index(' ')
 		# get the first bit i.e opcode
 		entry["opcode"] = cmd[:first_space]
@@ -43,6 +43,6 @@ def objdump_extract(binname):
 	return extracted
 
 
-# objdump_extract("../../tests/simple")
+# objdump_extract("../../tests/simpleMACHO")
 
 

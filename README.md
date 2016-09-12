@@ -15,11 +15,8 @@ Later plans include automagic analysis.
 
 Goals/Milestones/Plans:
 
-Plan the architechure. Try some ideas. fuck shit up
+- Plan the architechure. Try some ideas. fuck shit up (done)
+- get something that flips jumps (done)
+- sort out all the config shit
+- smooth out the user interaction bit
 
-the rest
-
-# I should change this things name to box basher
-
-
-K so we have the user interaction bit, replay fuzz shit and analysis

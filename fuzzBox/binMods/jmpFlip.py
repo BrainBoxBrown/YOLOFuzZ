@@ -2,8 +2,9 @@ import re
 import gdb
 from BinMod import BinMod
 from objdump_wrapper import *
+import random
 opcodes = {  
-    "JO":{  
+    "jo":{  
         "meaning":"if overflow",
         "flags":"OF = 1",
         "short":0x70,
@@ -11,9 +12,9 @@ opcodes = {
             0x0F,
             0x80
         ],
-        "opposite":"JNO"
+        "opposite":"jno"
     },
-    "JNO":{  
+    "jno":{  
         "meaning":"if not overflow",
         "flags":"OF = 0",
         "short":0x71,
@@ -21,9 +22,9 @@ opcodes = {
             0x0F,
             0x81
         ],
-        "opposite":"JO"
+        "opposite":"jo"
     },
-    "JS":{  
+    "js":{  
         "meaning":"if sign",
         "flags":"SF = 1",
         "short":0x78,
@@ -31,9 +32,9 @@ opcodes = {
             0x0F,
             0x88
         ],
-        "opposite":"JNS"
+        "opposite":"jns"
     },
-    "JNS":{  
+    "jns":{  
         "meaning":"if not sign",
         "flags":"SF = 0",
         "short":0x79,
@@ -41,9 +42,9 @@ opcodes = {
             0x0F,
             0x89
         ],
-        "opposite":"JS"
+        "opposite":"js"
     },
-    "JE":{  
+    "je":{  
         "meaning":"if equal",
         "flags":"ZF = 1",
         "short":0x74,
@@ -51,9 +52,9 @@ opcodes = {
             0x0F,
             0x84
         ],
-        "opposite":"JNE"
+        "opposite":"jne"
     },
-    "JZ":{  
+    "jz":{  
         "meaning":"if zero",
         "flags":"ZF = 1",
         "short":0x74,
@@ -61,9 +62,9 @@ opcodes = {
             0x0F,
             0x84
         ],
-        "opposite":"JNZ"
+        "opposite":"jnz"
     },
-    "JNE":{  
+    "jne":{  
         "meaning":"if not equal",
         "flags":"ZF = 0",
         "short":0x75,
@@ -71,9 +72,9 @@ opcodes = {
             0x0F,
             0x85
         ],
-        "opposite":"JE"
+        "opposite":"je"
     },
-    "JNZ":{  
+    "jnz":{  
         "meaning":"if not zero",
         "flags":"ZF = 0",
         "short":0x75,
@@ -81,9 +82,9 @@ opcodes = {
             0x0F,
             0x85
         ],
-        "opposite":"JZ"
+        "opposite":"jz"
     },
-    "JBE":{  
+    "jbe":{  
         "meaning":"if below or equal ",
         "signedness":"unsigned",
         "flags":"CF = 1 or ZF = 1",
@@ -92,9 +93,9 @@ opcodes = {
             0x0F,
             0x86
         ],
-        "opposite":"JNBE"
+        "opposite":"jnbe"
     },
-    "JNA":{  
+    "jna":{  
         "meaning":"if not above",
         "signedness":"unsigned",
         "flags":"CF = 1 or ZF = 1",
@@ -103,9 +104,9 @@ opcodes = {
             0x0F,
             0x86
         ],
-        "opposite":"JA"
+        "opposite":"ja"
     },
-    "JA":{  
+    "ja":{  
         "meaning":"if above ",
         "signedness":"unsigned",
         "flags":"CF = 0 and ZF = 0",
@@ -114,9 +115,9 @@ opcodes = {
             0x0F,
             0x87
         ],
-        "opposite":"JNA"
+        "opposite":"jna"
     },
-    "JNBE":{  
+    "jnbe":{  
         "meaning":"if not below or equal",
         "signedness":"unsigned",
         "flags":"CF = 0 and ZF = 0",
@@ -125,9 +126,9 @@ opcodes = {
             0x0F,
             0x87
         ],
-        "opposite":"JBE"
+        "opposite":"jbe"
     },
-    "JL":{  
+    "jl":{  
         "meaning":"if less ",
         "signedness":"signed",
         "flags":"SF <> OF",
@@ -136,9 +137,9 @@ opcodes = {
             0x0F,
             0x8C
         ],
-        "opposite":"JNL"
+        "opposite":"jnl"
     },
-    "JNGE":{  
+    "jnge":{  
         "meaning":"if not greater or equal	",
         "signedness":"signed",
         "flags":"SF <> OF",
@@ -147,9 +148,9 @@ opcodes = {
             0x0F,
             0x8C
         ],
-        "opposite":"JGE"
+        "opposite":"jge"
     },
-    "JGE":{  
+    "jge":{  
         "meaning":"if greater or equal  ",
         "signedness":"signed",
         "flags":"SF = OF",
@@ -158,9 +159,9 @@ opcodes = {
             0x0F,
             0x8D
         ],
-        "opposite":"JNGE"
+        "opposite":"jnge"
     },
-    "JNL":{  
+    "jnl":{  
         "meaning":"if not less	",
         "signedness":"signed",
         "flags":"SF = OF",
@@ -169,9 +170,9 @@ opcodes = {
             0x0F,
             0x8D
         ],
-        "opposite":"JL"
+        "opposite":"jl"
     },
-    "JLE":{  
+    "jle":{  
         "meaning":"if less or equal  ",
         "signedness":"signed",
         "flags":"ZF = 1 or SF <> OF",
@@ -180,9 +181,9 @@ opcodes = {
             0x0F,
             0x8E
         ],
-        "opposite":"JNLE"
+        "opposite":"jnle"
     },
-    "JNG":{  
+    "jng":{  
         "meaning":"if not greater	",
         "signedness":"signed",
         "flags":"ZF = 1 or SF <> OF",
@@ -191,9 +192,9 @@ opcodes = {
             0x0F,
             0x8E
         ],
-        "opposite":"JG"
+        "opposite":"jg"
     },
-    "JG":{  
+    "jg":{  
         "meaning":"if greater ",
         "signedness":"signed",
         "flags":"ZF = 0 and SF = OF",
@@ -202,9 +203,9 @@ opcodes = {
             0x0F,
             0x8F
         ],
-        "opposite":"JNG"
+        "opposite":"jng"
     },
-    "JNLE":{  
+    "jnle":{  
         "meaning":"if not less or equal",
         "signedness":"signed",
         "flags":"ZF = 0 and SF = OF",
@@ -213,9 +214,9 @@ opcodes = {
             0x0F,
             0x8F
         ],
-        "opposite":"JLE"
+        "opposite":"jle"
     },
-    "JP":{  
+    "jp":{  
         "meaning":"if parity",
         "flags":"PF = 1",
         "short":0x7A,
@@ -223,9 +224,9 @@ opcodes = {
             0x0F,
             0x8A
         ],
-        "opposite":"JNP"
+        "opposite":"jnp"
     },
-    "JPE":{  
+    "jpe":{  
         "meaning":"if parity even",
         "flags":"PF = 1",
         "short":0x7A,
@@ -233,9 +234,9 @@ opcodes = {
             0x0F,
             0x8A
         ],
-        "opposite":"JPO"
+        "opposite":"jpo"
     },
-    "JNP":{  
+    "jnp":{  
         "meaning":"if not parity",
         "flags":"PF = 0",
         "short":0x7B,
@@ -243,9 +244,9 @@ opcodes = {
             0x0F,
             0x8B
         ],
-        "opposite":"JP"
+        "opposite":"jp"
     },
-    "JPO":{  
+    "jpo":{  
         "meaning":"if parity odd",
         "flags":"PF = 0",
         "short":0x7B,
@@ -253,9 +254,9 @@ opcodes = {
             0x0F,
             0x8B
         ],
-        "opposite":"JPE"
+        "opposite":"jpe"
     },
-    "JB":{  
+    "jb":{  
         "meaning":"if below",
         "signedness":"unsigned",
         "flags":"CF = 1",
@@ -264,9 +265,9 @@ opcodes = {
             0x0F,
             0x82
         ],
-        "opposite":"JNB"
+        "opposite":"jnb"
     },
-    "JNAE":{  
+    "jnae":{  
         "meaning":"if not above or equal",
         "signedness":"unsigned",
         "flags":"CF = 1",
@@ -275,9 +276,9 @@ opcodes = {
             0x0F,
             0x82
         ],
-        "opposite":"JAE"
+        "opposite":"jae"
     },
-    "JC":{  
+    "jc":{  
         "meaning":"if carry",
         "signedness":"unsigned",
         "flags":"CF = 1",
@@ -286,9 +287,9 @@ opcodes = {
             0x0F,
             0x82
         ],
-        "opposite":"JNC"
+        "opposite":"jnc"
     },
-    "JNB":{  
+    "jnb":{  
         "meaning":"if not below",
         "signedness":"unsigned",
         "flags":"CF = 0",
@@ -297,9 +298,9 @@ opcodes = {
             0x0F,
             0x83
         ],
-        "opposite":"JB"
+        "opposite":"jb"
     },
-    "JAE":{  
+    "jae":{  
         "meaning":"if above or equal",
         "signedness":"unsigned",
         "flags":"CF = 0",
@@ -308,9 +309,9 @@ opcodes = {
             0x0F,
             0x83
         ],
-        "opposite":"JNAE"
+        "opposite":"jnae"
     },
-    "JNC":{  
+    "jnc":{  
         "meaning":"if not carry",
         "signedness":"unsigned",
         "flags":"CF = 0",
@@ -319,7 +320,7 @@ opcodes = {
             0x0F,
             0x83
         ],
-        "opposite":"JC"
+        "opposite":"jc"
     }
 }
 
@@ -347,7 +348,7 @@ class JmpFlip( BinMod ):
 		]
 		
 		# dump all the instructions
-		dump = objdump_extract(self.config["prog"])
+		dump = objdump_extract(self.my_config["prog"])
 		# get all the conditional jumps
 		con_jmps = [op for op in dump if re.match(r'j[^m]',op["opcode"])]
 		# filter out the irrelevant ones
@@ -359,8 +360,42 @@ class JmpFlip( BinMod ):
 		super(JmpFlip, self).__init__(_peda)
 		self.jmps = self.get_jmps()
 		# fuck all the jmps
-		
+		# self.gdb_run()
+	def prep(self):
+		"""
+			This runs just after we start
+			flip some jumps
+		"""
+		cmds = ""
+		for jmp in self.jmps:
+			if random.randint(0,3) != 0:
+				continue
+
+			loaded_jmp = opcodes[jmp["opcode"]]
+			opposite_op = loaded_jmp["opposite"]
+			address = jmp["address"]
+			opposite_code = ""
+			if jmp["bytes"][0] == loaded_jmp["short"]:
+				opposite_code = hex(opcodes[opposite_op]["short"])
+			elif jmp["bytes"][1] == loaded_jmp["near"][1]:
+				op_bytes = opcodes[opposite_op]["near"]
+				opposite_code = "0x" + ''.join([chr(x).encode('hex') for x in op_bytes])
+
+			print address
+			print opposite_code
+			print "0x" + ''.join([chr(x).encode('hex') for x in jmp["bytes"]])
+			cmd = "patch {0} {1}".format(str(address), str(opposite_code))
+			print cmd 
+			print self.gdb_run(cmd)
+			cmds += cmd + '\n'
+		return cmds
+
+
+
 
 
 	def update(self):
 		return super(JmpFlip, self).update()
+
+
+
