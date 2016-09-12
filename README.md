@@ -19,3 +19,7 @@ Plan the architechure. Try some ideas. fuck shit up
 
 the rest
 
+# I should change this things name to box basher
+
+
+K so we have the user interaction bit, replay fuzz shit and analysis
