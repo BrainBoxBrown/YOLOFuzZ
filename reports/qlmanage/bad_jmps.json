@@ -1,0 +1,302 @@
+[
+    {
+        "report_file": "", 
+        "args": [
+            "1000502c5 <__mh_execute_header+0x502c5> "
+        ], 
+        "bytes": [
+            115, 
+            101
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x10005025e", 
+        "opcode": "jae", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "1000502af <__mh_execute_header+0x502af> "
+        ], 
+        "bytes": [
+            116, 
+            77
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100050260", 
+        "opcode": "je", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "1000502a8 <__mh_execute_header+0x502a8> "
+        ], 
+        "bytes": [
+            120, 
+            67
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100050263", 
+        "opcode": "js", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050323 <__mh_execute_header+0x50323> "
+        ], 
+        "bytes": [
+            117, 
+            108
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x1000502b5", 
+        "opcode": "jne", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "1000502fc <__mh_execute_header+0x502fc> "
+        ], 
+        "bytes": [
+            116, 
+            67
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x1000502b7", 
+        "opcode": "je", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "10005034f <__mh_execute_header+0x5034f> "
+        ], 
+        "bytes": [
+            117, 
+            101
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x1000502e8", 
+        "opcode": "jne", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050351 <__mh_execute_header+0x50351> "
+        ], 
+        "bytes": [
+            117, 
+            101
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x1000502ea", 
+        "opcode": "jne", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "10005046c <__mh_execute_header+0x5046c> "
+        ], 
+        "bytes": [
+            114, 
+            103
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100050403", 
+        "opcode": "jb", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050473 <__mh_execute_header+0x50473> "
+        ], 
+        "bytes": [
+            119, 
+            105
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100050408", 
+        "opcode": "ja", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "1000504f1 <__mh_execute_header+0x504f1> "
+        ], 
+        "bytes": [
+            115, 
+            101
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x10005048a", 
+        "opcode": "jae", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050505 <__mh_execute_header+0x50505> "
+        ], 
+        "bytes": [
+            112, 
+            101
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x10005049e", 
+        "opcode": "jo", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050516 <__mh_execute_header+0x50516> "
+        ], 
+        "bytes": [
+            116, 
+            115
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x1000504a1", 
+        "opcode": "je", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "10005051c <__mh_execute_header+0x5051c> "
+        ], 
+        "bytes": [
+            117, 
+            116
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x1000504a6", 
+        "opcode": "jne", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050510 <__mh_execute_header+0x50510> "
+        ], 
+        "bytes": [
+            114, 
+            101
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x1000504a9", 
+        "opcode": "jb", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050680 <__mh_execute_header+0x50680> "
+        ], 
+        "bytes": [
+            117, 
+            108
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100050612", 
+        "opcode": "jne", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050663 <__mh_execute_header+0x50663> "
+        ], 
+        "bytes": [
+            116, 
+            77
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100050614", 
+        "opcode": "je", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100050928 <__mh_execute_header+0x50928> "
+        ], 
+        "bytes": [
+            116, 
+            105
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x1000508bd", 
+        "opcode": "je", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100051403 <__mh_execute_header+0x51403> "
+        ], 
+        "bytes": [
+            116, 
+            104
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100051399", 
+        "opcode": "je", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100051a83 <__mh_execute_header+0x51a83> "
+        ], 
+        "bytes": [
+            121, 
+            58
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100051a47", 
+        "opcode": "jns", 
+        "mod": false
+    }, 
+    {
+        "report_file": "", 
+        "args": [
+            "100052b61 <__mh_execute_header+0x52b61> "
+        ], 
+        "bytes": [
+            116, 
+            58
+        ], 
+        "valid": -1, 
+        "peda": 1, 
+        "address": "0x100052b25", 
+        "opcode": "je", 
+        "mod": false
+    }
+]

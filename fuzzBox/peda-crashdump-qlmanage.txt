@@ -1,0 +1,580 @@
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 13:37:35 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 13:39:37 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 14:21:25 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 14:23:41 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 14:26:14 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 15:40:29 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 15:43:01 2016[0m
+[mReason: [;31mSIGILL[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff8bcb1a6b in __abort () from /usr/lib/system/libsystem_c.dylib
+#1  0x00007fff8bcb2329 in __stack_chk_fail () from /usr/lib/system/libsystem_c.dylib
+#2  0x0000000100026168 in _mh_execute_header ()
+#3  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 15:47:59 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 19:30:49 2016[0m
+[mReason: [;31mSIGSEGV[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x0000000118f03df8 in ?? ()
+#1  0x0000000000000018 in ?? ()
+#2  0x00007fff9386dfd7 in ?? ()
+#3  0x00000001003052d0 in ?? ()
+#4  0x00007fff5fbff960 in ?? ()
+#5  0x000000010005df66 in ?? ()
+#6  0x0000000000000001 in ?? ()
+#7  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 19:33:28 2016[0m
+[mReason: [;31mSIGSEGV[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x0000000118f03df8 in ?? ()
+#1  0x0000000000000018 in ?? ()
+#2  0x00007fff9386dfd7 in ?? ()
+#3  0x0000000100229980 in ?? ()
+#4  0x00007fff5fbff960 in ?? ()
+#5  0x000000010005df66 in ?? ()
+#6  0x0000000000000001 in ?? ()
+#7  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 19:38:21 2016[0m
+[mReason: [;31mSIGSEGV[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff9773089c in QLThumbnailQueueAddThumbnailsFromArray () from /System/Library/Frameworks/QuickLook.framework/Versions/A/QuickLook
+#1  0x0000000100025bde in _mh_execute_header ()
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:10:07 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: Unknown[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x000000010002455c in _mh_execute_header ()
+#1  0x0000000100106500 in ?? ()
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:38:57 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:41:42 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfeb34 in ?? ()
+#6  0x0700010100125930 in ?? ()
+#7  0x00007fff5fbfeb48 in ?? ()
+#8  0x0000320300000001 in ?? ()
+#9  0x00007fff5fbfeb40 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:47:46 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:49:57 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: Unknown[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x000000010002231f in _mh_execute_header ()
+#1  0x00007fff5fbff960 in ?? ()
+#2  0x0000000000000005 in ?? ()
+#3  0x00007fff5fbfeeb0 in ?? ()
+#4  0x0000000000000074 in ?? ()
+#5  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:50:04 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:51:01 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x070001010021d240 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x0000300300000001 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:51:49 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:51:58 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Sep 15 23:53:18 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: Unknown[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x0000000100025ef4 in _mh_execute_header ()
+#1  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 00:11:37 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x0700010100209840 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x0000300300000001 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 10:49:16 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x0700010100207210 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x0000300300207210 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 10:50:23 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x0700010100500900 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x0000310300500900 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 10:50:34 2016[0m
+[mReason: [;31mSIGILL[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff8bcb1a6b in __abort () from /usr/lib/system/libsystem_c.dylib
+#1  0x00007fff8bcb2329 in __stack_chk_fail () from /usr/lib/system/libsystem_c.dylib
+#2  0x000000010000ab8b in _mh_execute_header ()
+#3  0x00000001000a1000 in ?? ()
+#4  0x0000000100114ae0 in ?? ()
+#5  0x0000000000000005 in ?? ()
+#6  0x0000000100288640 in ?? ()
+#7  0xffffffffffffffff in ?? ()
+#8  0x00000001004329e0 in ?? ()
+#9  0x0000000100114b00 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 10:50:53 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 10:51:32 2016[0m
+[mReason: [;31mSIGABRT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 11:00:40 2016[0m
+[mReason: [;31mSIGINT[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x070001010011ec40 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x00002e070011ec40 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 11:01:44 2016[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff9773089c in QLThumbnailQueueAddThumbnailsFromArray () from /System/Library/Frameworks/QuickLook.framework/Versions/A/QuickLook
+#1  0x0000000100025bde in _mh_execute_header ()
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 11:05:13 2016[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x0700010100134240 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x00002e0700134240 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 11:08:05 2016[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x0700010100313f30 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x00002d0700313f30 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 11:08:28 2016[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 11:28:27 2016[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x070001010020a390 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x0000300300000001 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 11:29:18 2016[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a8286 in __pthread_kill () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff97d4f9f9 in vtable for WSSerializerBase () from /usr/lib/system/libsystem_pthread.dylib
+#2  0x0000000000000000 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Fri Sep 16 12:50:39 2016[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007fff988a34de in mach_msg_trap () from /usr/lib/system/libsystem_kernel.dylib
+#1  0x00007fff988a264f in mach_msg () from /usr/lib/system/libsystem_kernel.dylib
+#2  0x00007fff8fad2eb4 in ?? () from /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+#3  0x00007fff00000000 in ?? ()
+#4  0xffffffff8bc63f55 in ?? ()
+#5  0x00007fff5fbfe624 in ?? ()
+#6  0x0700010100508400 in ?? ()
+#7  0x00007fff5fbfe638 in ?? ()
+#8  0x0000310300000001 in ?? ()
+#9  0x00007fff5fbfe630 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m

@@ -1,0 +1,40 @@
+Findings:
+
+If I flip 0x100025308 I get an infinite loop thats pretty neat :)
+0x100025ef4 < - mega loop
+
+Miss jmp:0x100025ef4 mod:True
+Miss jmp:0x100025ef4 mod:True
+Miss jmp:0x100025ef4 mod:True
+saved return address:0x0
+saved return address is not valid, hmmm :)
+
+
+
+0x100022acd 
+qlmanage: illegal option for t -- 
+
+
+no effect:
+0x100025308
+
+
+Program Output:
+Testing Quick Look thumbnails with files:
+
+	/Users/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/tests/qlmanage/image.jpg
+
+* /Users/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/tests/qlmanage/image.jpg produced one thumbnail
+
+Done producing thumbnails
+
+Thumbnails produced: 0
+
+Duration: 4.29622 seconds (average inf seconds per file)
+
+
+
+
+
+
+

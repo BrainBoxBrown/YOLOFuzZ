@@ -17,6 +17,11 @@ Goals/Milestones/Plans:
 
 - Plan the architechure. Try some ideas. fuck shit up (done)
 - get something that flips jumps (done)
-- sort out all the config shit
-- smooth out the user interaction bit
+- sort out all the config shit (done)
+- smooth out the user interaction bit (meh, configs are pretty fun)
 
+- Add analysis
+	- make a graph of the program using the jmps
+
+- add the option to get dropped into a gdb session on crash
+- add ban list for specific jmps

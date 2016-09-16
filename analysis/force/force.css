@@ -1,0 +1,26 @@
+body {
+  stroke: #999;
+  stroke-width: 0.5px;
+  color: blue;
+  stroke-opacity: .6;
+  font-size: 10px;
+  font: courier;
+}
+
+circle {
+  fill: #15b3ff;
+  stroke: #45e3ff;
+  stroke-opacity: .6;
+}
+path.link {
+  stroke: #999;
+  fill: #999;
+  stroke-opacity: .6;
+  stroke-width: 1;
+  fill-opacity: 0.1;
+}
+node.text {
+	font: courier;
+	font-size: 1;
+	color: blue;
+}

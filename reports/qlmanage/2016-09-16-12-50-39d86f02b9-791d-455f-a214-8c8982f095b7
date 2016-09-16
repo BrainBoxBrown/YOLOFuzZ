@@ -1,0 +1,31 @@
+Arguments:  -t  /Users/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/tests/qlmanage/image.jpg  -o /Users/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/tests/qlmanage/
+Transcript file: /Users/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/Transcript.txt
+
+
+PrepJmps:
+
+Hit  jmp:0x100004688 mod:False
+Miss jmp:0x100021c85 mod:False
+Hit  jmp:0x100023379 mod:False
+Miss jmp:0x1000233ea mod:False
+Hit  jmp:0x100022bf3 mod:False
+Hit  jmp:0x100022c12 mod:False
+Hit  jmp:0x100022c96 mod:False
+Hit  jmp:0x100022cbe mod:False
+Miss jmp:0x100022d27 mod:False
+Hit  jmp:0x100022d2c mod:True
+Miss jmp:0x10002340e mod:False
+Miss jmp:0x100023416 mod:False
+Hit  jmp:0x10002341b mod:False
+Miss jmp:0x10002343c mod:False
+Hit  jmp:0x100023441 mod:False
+Hit  jmp:0x100023465 mod:True
+Miss jmp:0x100023482 mod:False
+Miss jmp:0x100022567 mod:False
+patch 0x1000026c5 0x840f
+patch 0x100004a2f 0x75
+patch 0x100006483 0x75
+patch 0x100006a99 0x74
+patch 0x10000a2b9 0x75
+patch 0x10000aa27 0x75
+patch 0x10000b14b 0x74

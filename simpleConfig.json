@@ -1,0 +1,8 @@
+{
+    "report_dir": "/root/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/reports/", 
+    "prog_path": "/root/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/tests/", 
+    "args": " 'blah' ", 
+    "prog_name": "simple", 
+    "path": "/root/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/", 
+    "transcript": "/root/BrainBox/Dropbox/Programs/Repositories/YOLOFuzZ/Transcript.txt"
+}

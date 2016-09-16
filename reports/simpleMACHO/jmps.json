@@ -1,0 +1,34 @@
+[
+    {
+        "opcode": "jne", 
+        "args": [
+            "100000eae <_main+0xce> "
+        ], 
+        "bytes": [
+            15, 
+            133, 
+            78, 
+            0, 
+            0, 
+            0
+        ], 
+        "valid": 1, 
+        "address": "0x100000e5a"
+    }, 
+    {
+        "opcode": "je", 
+        "args": [
+            "100000ea9 <_main+0xc9> "
+        ], 
+        "bytes": [
+            15, 
+            132, 
+            17, 
+            0, 
+            0, 
+            0
+        ], 
+        "valid": 1, 
+        "address": "0x100000e92"
+    }
+]
